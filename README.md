@@ -6,7 +6,7 @@ As of August 16, 2023, `torchtext.datasets.Multi30k` tries to retrieve data from
 
 To fix this, add these lines before using the `Multi30k` dataset:
 ```
-from torchtext.datasets import multi30k, Multi30k
+from torchtext.datasets import multi30k
 
 multi30k.URL['train'] = 'https://raw.githubusercontent.com/tanjeffreyz/pytorch-multi30k/main/training.tar.gz'
 multi30k.URL['valid'] = 'https://raw.githubusercontent.com/tanjeffreyz/pytorch-multi30k/main/validation.tar.gz'
